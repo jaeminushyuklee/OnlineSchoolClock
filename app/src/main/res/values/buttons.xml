@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btn">Button</string>
+    <string name="message">Hello Geeks! This is a Button.</string>
+</resources>
