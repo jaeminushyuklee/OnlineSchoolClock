@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,11 +11,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val button = findViewById<Button>(R.id.button)
-        button?.setOnClickListener()
+        val assignbutton = findViewById<Button>(R.id.assignbutton)
+        assignbutton?.setOnClickListener()
         {
             val changetoAssignment = Intent(this, AssignmentActivity::class.java)
             startActivity(changetoAssignment)
         }
+
+        val testbutton = findViewById<Button>(R.id.testbutton)
+        testbutton?.setOnClickListener()
+        {
+            val changetoTest = Intent(this, TestActivity::class.java)
+            startActivity(changetoTest)
+        }
+
+
     }
 }
