@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val assignbutton = findViewById<Button>(R.id.assignbutton)
-        assignbutton?.setOnClickListener()
+        assignbutton.setOnClickListener()
         {
             val changetoAssignment = Intent(this, AssignmentActivity::class.java)
             startActivity(changetoAssignment)
