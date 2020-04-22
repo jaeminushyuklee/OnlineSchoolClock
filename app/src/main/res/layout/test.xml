@@ -27,14 +27,13 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/tester"
+        android:id="@+id/TestTime"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/testerbutton"
+        android:id="@+id/shower"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Show my exam time" />
 </LinearLayout>
