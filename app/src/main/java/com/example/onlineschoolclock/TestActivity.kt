@@ -2,6 +2,7 @@ package com.example.onlineschoolclock
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -64,6 +65,13 @@ class TestActivity : AppCompatActivity() {
             chour = converted.chour
             cminute = converted.cminute
             println("Converted: " + cyear + " " + cmonth + " " + cday + " " + chour + " " + cminute)
+            val changetoCountdown = Intent(this, CountdownActivity::class.java)
+            changetoCountdown.putExtra("cyear", cyear)
+            changetoCountdown.putExtra("cmonth", cmonth)
+            changetoCountdown.putExtra("cday", cday)
+            changetoCountdown.putExtra("chour", chour)
+            changetoCountdown.putExtra("cminute", cminute)
+            startActivity(changetoCountdown)
         })
     }
 }
