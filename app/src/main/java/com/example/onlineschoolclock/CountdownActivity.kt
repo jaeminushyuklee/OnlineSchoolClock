@@ -1,8 +1,8 @@
 package com.example.onlineschoolclock
 
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.widget.CalendarView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.countdown_activity.*
 import java.util.*
@@ -12,6 +12,7 @@ class CountdownActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.countdown_activity)
+
 
         handler.post(object : Runnable {
             override fun run() {
@@ -47,6 +48,9 @@ class CountdownActivity : AppCompatActivity() {
 
         // Display Countdown
         countdowntimer.text = "${days}d ${hours}h ${minutes}m ${seconds}s"
+
+        val calendarview = findViewById<CalendarView>(R.id.calendarViewtest)
+        calendarview.setDate(eventDate.timeInMillis)
 
         // Show different text when the event has passed
         endEvent(currentDate, eventDate)
