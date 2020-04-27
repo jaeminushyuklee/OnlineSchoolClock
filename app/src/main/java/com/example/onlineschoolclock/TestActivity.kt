@@ -25,8 +25,8 @@ class TestActivity : AppCompatActivity() {
         var chour = 0
         var cminute = 0
 
-        val picktestdate = findViewById<Button>(R.id.testenterdate)
-        val picktesttime = findViewById<Button>(R.id.testentertime)
+        val picktestdate = findViewById<Button>(R.id.assignenterdate)
+        val picktesttime = findViewById<Button>(R.id.assignentertime)
 
 
         picktesttime.setOnClickListener {
@@ -34,7 +34,7 @@ class TestActivity : AppCompatActivity() {
             val timeSetListener = TimePickerDialog.OnTimeSetListener { timePicker, hour, minute ->
                 cal.set(Calendar.HOUR_OF_DAY, hour)
                 cal.set(Calendar.MINUTE, minute)
-                TestTime.setText("" + hour + " " + minute)
+                AssignTime.setText("" + hour + " " + minute)
                 phour = hour
                 pminute = minute
 
@@ -48,7 +48,7 @@ class TestActivity : AppCompatActivity() {
             val month = c.get(Calendar.MONTH)
             val year = c.get(Calendar.YEAR)
             val dpd = DatePickerDialog(this, DatePickerDialog.OnDateSetListener { datePicker, year, monthOfYear, dayOfMonth ->
-                TestDate.setText("" + year + " " + (monthOfYear + 1) + " " + dayOfMonth)
+                AssignDate.setText("" + year + " " + (monthOfYear + 1) + " " + dayOfMonth)
                 pyear = year
                 pday = dayOfMonth
                 pmonth = monthOfYear + 1
@@ -56,7 +56,7 @@ class TestActivity : AppCompatActivity() {
             }, year, month, day)
             dpd.show()
         }
-        shower.setOnClickListener({
+        showerAssign.setOnClickListener({
             println("Picked: " + pyear + " " + pmonth + " " + pday + " " + phour + " " + pminute)
             val converted = TimeConverter(pyear, pmonth, pday, phour, pminute)
             cyear = converted.cyear

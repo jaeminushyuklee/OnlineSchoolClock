@@ -4,35 +4,35 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="When is your test?" />
 
     <Button
-        android:id="@+id/testentertime"
+        android:id="@+id/assignentertime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter Time" />
 
     <Button
-        android:id="@+id/testenterdate"
+        android:id="@+id/assignenterdate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter date" />
 
     <TextView
-        android:id="@+id/TestDate"
+        android:id="@+id/AssignDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/TestTime"
+        android:id="@+id/AssignTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:id="@+id/shower"
+        android:id="@+id/showerAssign"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Show my exam time" />

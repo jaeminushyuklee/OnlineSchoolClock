@@ -4,9 +4,36 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="When is your assignment due?" />
+        android:text="When is your assignment?" />
 
+    <Button
+        android:id="@+id/assignentertime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Time" />
+
+    <Button
+        android:id="@+id/assignenterdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter date" />
+
+    <TextView
+        android:id="@+id/AssignDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/AssignTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/showerAssign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show my assignment time" />
 </LinearLayout>
