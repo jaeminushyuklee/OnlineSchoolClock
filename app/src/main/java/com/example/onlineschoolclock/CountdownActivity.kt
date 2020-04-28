@@ -3,6 +3,7 @@ package com.example.onlineschoolclock
 import android.os.Bundle
 import android.os.Handler
 import android.widget.CalendarView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.countdown_activity.*
 import java.util.*
@@ -47,7 +48,9 @@ class CountdownActivity : AppCompatActivity() {
 
 
         // Display Countdown
-        countdowntimer.text = "${days}d ${hours}h ${minutes}m ${seconds}s"
+        countdowntimer.text = "${days}day(s) ${hours}hour(s) ${minutes}minute(s) ${seconds}second(s)"
+        val actualdate = findViewById<TextView>(R.id.actualdate)
+        actualdate.setText(""+getIntent().getIntExtra("cmonth",0) + " / " + getIntent().getIntExtra("cday",0) + "  " + getIntent().getIntExtra("chour",0) + " : " + getIntent().getIntExtra("cminute",0))
 
         val calendarview = findViewById<CalendarView>(R.id.calendarViewtest)
         calendarview.setDate(eventDate.timeInMillis)

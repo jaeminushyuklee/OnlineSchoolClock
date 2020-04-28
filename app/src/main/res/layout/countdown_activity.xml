@@ -11,5 +11,12 @@
     <TextView
         android:id="@+id/countdowntimer"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textSize='32dp'
+        android:layout_height="220dp" />
+
+    <TextView
+        android:id="@+id/actualdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 </LinearLayout>
