@@ -4,6 +4,8 @@ This app is designed to solve that issue for students in South Korea. Whether it
 your professor tells and this app will tell you how much time you have left and the due/start time/date according to your time 
 perspective!
 
+Explanation video: https://youtu.be/wxnw8_lGcMU
+
 Credits:
 Countdown Timer - https://github.com/johncodeos-blog/CountdownTimerAndroidExample
 Date Picker - https://www.youtube.com/watch?v=LMPmybCTKDA
